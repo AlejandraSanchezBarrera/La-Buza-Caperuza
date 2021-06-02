@@ -16,7 +16,7 @@ public class MyWorld extends World
     public MyWorld()
     {    
         super(1500, 900, 1); 
-        addObject(new CaperuzaIn(), 500,500);
+        addObject(new CaperuzaIn(), 510,500);
         addObject(new CaperuzaG(), 600,600);
     }
 }
