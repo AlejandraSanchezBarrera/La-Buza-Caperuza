@@ -1,5 +1,6 @@
 #Greenfoot project file
 class.CaperuzaIn.image=caperuza\ inicio.png
+class.MyWorld.image=inicio.png
 dependency1.from=MyWorld
 dependency1.to=CaperuzaIn
 dependency1.type=UsesDependency
