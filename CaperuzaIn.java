@@ -14,14 +14,17 @@ public class CaperuzaIn extends Actor
      */
     private int counter;
     private int currentImage;
+    
     public CaperuzaIn()
     {
         setImage("caperuza inicio.png");
     }
+    
     public void act() 
     {
         move();
     }
+    
     public void move(){
         if(counter == 0){
             if(currentImage == 0){

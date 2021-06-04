@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=GreenWorld
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ GreeWorld\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=GreenWorld()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ GreeWorld.\r\n\ \r\n
+comment2.params=
+comment2.target=void\ prepare()
+comment3.params=
+comment3.target=int\ getAdjustedHeight()
+comment4.params=textMap
+comment4.target=void\ drawMap(java.lang.String[])
+comment5.params=
+comment5.target=int\ getScoreAreaHeight()
+comment6.params=amount
+comment6.target=void\ changeScore(int)
+comment7.params=
+comment7.target=boolean\ levelIsComplete()
+comment8.params=
+comment8.target=greenfoot.GreenfootImage\ getPlayerImage()
+comment9.params=
+comment9.target=void\ loseLife()
+numComments=10

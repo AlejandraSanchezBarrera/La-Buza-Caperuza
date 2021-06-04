@@ -6,17 +6,27 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class MyWorld extends World
+public class Level3 extends GreenWorld
 {
 
     /**
      * Constructor for objects of class MyWorld.
      * 
      */
-    public MyWorld()
+    public Level3()
     {    
-        super(1500, 900, 1); 
-        addObject(new CaperuzaIn(), 510,500);
-        addObject(new CaperuzaG(), 600,600);
+        super();
+        String[] map={
+            "",
+            "",
+            "",
+            "",
+        };
+        drawMap(map);
+    }
+    
+    public Level3(int score){
+        super();
+        sb.setScore(score);
     }
 }

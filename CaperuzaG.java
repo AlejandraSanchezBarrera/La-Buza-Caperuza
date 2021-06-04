@@ -6,39 +6,40 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class CaperuzaG extends Actor
+public class CaperuzaG extends MovingActor
 {
+    private int counter;
+    private int currentImage;
+    
     /**
      * Act - do whatever the CaperuzaG wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    private static final int OFFSET = 3;
-    public CaperuzaG()
-    {
+    
+    public CaperuzaG(){
         setImage("caperuzaR.png");
     }
+    
     public void act() 
     {
         handleDirection();
-    }  
+    } 
+    
     public void handleDirection(){
-        int x = getX();
-        int y = getY();
-
         if(Greenfoot.isKeyDown("right")){
-            setLocation(x + OFFSET, y);
+            move(Direction.RIGHT);
             setImage("caperuzaR.png");
         }
         else if(Greenfoot.isKeyDown("left")){
-            setLocation(x - OFFSET, y);
+            move(Direction.LEFT);
             setImage("caperuzaL.png");
         }
         else if(Greenfoot.isKeyDown("down")){
-            setLocation(x, y + OFFSET);
+            move(Direction.DOWN);
             setImage("caperuzaF.png");
         }
         else if(Greenfoot.isKeyDown("up")){
-            setLocation(x, y - OFFSET);
+            move(Direction.UP);
             setImage("caperuzaB.png");
         }
     }
