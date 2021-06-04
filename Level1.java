@@ -38,10 +38,6 @@ public class Level1 extends GreenWorld
     }
     
     private void prepare(){
-        /*Spider spider1=new Spider();
-        addObject(spider1, 65,100);
-        Spider spider2=new Spider();
-        addObject(spider2, 50,50);*/
         Spider spider3=new Spider();
         addObject(spider3, 80,200);
     }

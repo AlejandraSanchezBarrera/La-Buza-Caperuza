@@ -8,12 +8,12 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class GreenWorld extends World
 {
-    int scoreAreaHeight = 60;
-    Scoreboard sb;
-    CaperuzaG c;
-    int startBugX = 340;
-    int startBugY = 220;
-    CaperuzaG caperuza;
+    private int scoreAreaHeight = 60;
+    public Scoreboard sb;
+    private CaperuzaG c;
+    private int startBugX = 340;
+    private int startBugY = 220;
+    private CaperuzaG caperuza;
     
     /**
      * Constructor for objects of class GreeWorld.
