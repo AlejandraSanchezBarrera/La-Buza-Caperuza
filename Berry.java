@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Berry extends ITEMS
+public class Berry extends Items
 {
     private static final GreenfootImage image = new GreenfootImage("images/baia.png");
     

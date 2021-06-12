@@ -6,17 +6,19 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class CaperuzaG extends Characters
+public class CaperuzaGame extends Characters
 {
     private static final int OFFSET = 3;
-    public CaperuzaG()
+    public CaperuzaGame()
     {
         setImage("caperuzaR.png");
     }
+
     public void act() 
     {
         handleDirection();
     }  
+
     public void handleDirection(){
         int x = getX();
         int y = getY();
@@ -38,11 +40,12 @@ public class CaperuzaG extends Characters
         }
     }
 
-        public void enemiges(){
+    public void enemiges(){
         if(isTouching(Enemiges.class)){
             setLocation(50,150);
         }
     }
+
     public void collisions(){
         int x = getX();
         int y = getY();

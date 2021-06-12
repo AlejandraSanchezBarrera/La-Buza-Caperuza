@@ -15,7 +15,7 @@ public class Score extends World
      */
     public Score()
     {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(1500, 900, 1);
+        addObject(new Regresar(),1400,850);
     }
 }
