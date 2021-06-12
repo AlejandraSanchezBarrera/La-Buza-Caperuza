@@ -6,9 +6,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class WallV extends Obstacle
+public class VerticalWall extends Obstacle
 {
-    public WallV(){
+    public VerticalWall(){
         //getImage().scale(40,40);
         setImage("wallver.png");
     }

@@ -6,14 +6,15 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class LEVELS extends World
+public class Levels extends World
 {
 
     /**
      * Constructor for objects of class LEVELS.
      * 
      */
-    public LEVELS()
+    
+    public Levels()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(1500, 900, 1); 
@@ -23,4 +24,5 @@ public class LEVELS extends World
     public void prepararNivel(){
         
     }
+    
 }

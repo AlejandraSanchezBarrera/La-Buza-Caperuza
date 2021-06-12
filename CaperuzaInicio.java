@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class CaperuzaIn extends Actor
+public class CaperuzaInicio extends Actor
 {
     /**
      * Act - do whatever the CaperuzaIn wants to do. This method is called whenever
@@ -15,7 +15,7 @@ public class CaperuzaIn extends Actor
     private int counter;
     private int currentImage;
     
-    public CaperuzaIn()
+    public CaperuzaInicio() 
     {
         setImage("caperuza inicio.png");
     }
