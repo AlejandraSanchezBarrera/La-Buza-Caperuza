@@ -16,6 +16,29 @@ public class Wolf extends Enemiges
 
     public void act() 
     {
+        move();
+    }
+
+    @Override
+    public void moveimage(int dir){
+        switch(dir){
+            case 0:
+
+            break;
+
+            case 1:
+
+            break;
+
+            case 2:
+            setImage("LoboL.png");
+            break;
+
+            case 3:
+            setImage("LoboR.png");
+            break;
+
+        }
     }
 
 }
