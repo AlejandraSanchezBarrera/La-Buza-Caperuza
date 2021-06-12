@@ -20,7 +20,6 @@ public class CaperuzaG extends Characters
     public void handleDirection(){
         int x = getX();
         int y = getY();
-
         if(Greenfoot.isKeyDown("right")){
             setLocation(x + OFFSET, y);
             setImage("caperuzaR.png");
