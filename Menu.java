@@ -20,12 +20,11 @@ public class Menu extends World
     }
     
     private void prepareMenu(){
-        addObject(new CaperuzaIn(), 300,500);
+        addObject(new CaperuzaIn(), 300,550);
         addObject(new Tittle(),940,230);
         addObject(new Play(),800,500);
         addObject(new ComoJugar(),1050,650);
         addObject(new Records(),1300,790);
     }
-    
     
 }
