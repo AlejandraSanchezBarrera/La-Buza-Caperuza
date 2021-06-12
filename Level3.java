@@ -1,32 +1,20 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class MyWorld here.
+ * Write a description of class Level3 here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Level3 extends GreenWorld
+public class Level3 extends LEVELS
 {
 
     /**
-     * Constructor for objects of class MyWorld.
+     * Constructor for objects of class Level3.
      * 
      */
     public Level3()
-    {    
+    {
         super();
-        String[] map={
-            "",
-            "",
-            "",
-            "",
-        };
-        drawMap(map);
-    }
-    
-    public Level3(int score){
-        super();
-        sb.setScore(score);
     }
 }
