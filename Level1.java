@@ -40,5 +40,7 @@ public class Level1 extends Levels
 
     public void chacters(){
         addObject(caperuza, 1400, 820);
+        addObject(new Wolf(),750,450);
+        addObject(new Spider(),750,450);
     }
 }
