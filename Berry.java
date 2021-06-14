@@ -12,6 +12,6 @@ public class Berry extends Items
     
     public Berry(){
         setImage(image);
-        points = 10;
+        points = 1;
     }    
 }
