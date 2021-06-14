@@ -16,5 +16,5 @@ public class Play extends Boton
     {
         if(Greenfoot.mouseClicked(this))
             Greenfoot.setWorld(new Level1());
-    }    
+    }     
 }
