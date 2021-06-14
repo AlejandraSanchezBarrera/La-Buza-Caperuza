@@ -9,7 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class CaperuzaGame extends Characters
 {
     private static final int OFFSET = 4;
-    private int points=0;
+    private static int points=0;
     private int direction=0;
     private int lives=3;
     private int skill=0;
@@ -142,11 +142,19 @@ public class CaperuzaGame extends Characters
     public int getpoints(){
         return points;
     }
+    
+    public static void setPuntuacion(int puntuacion){
+        points=puntuacion;
+    }
 
     public void gameover(){
         if(getlives()==0){
             Greenfoot.setWorld(new GameOver());
         }
+    }
+    
+    public static int getPuntuacion(){
+        return points;
     }
 
     public void reset(){
