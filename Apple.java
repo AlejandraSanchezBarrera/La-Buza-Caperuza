@@ -8,10 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Apple extends Items
 {
-    private static final GreenfootImage image = new GreenfootImage("images/manzana.png");
-    
     public Apple(){
-        setImage(image);
-        points = 10;
-    }   
+        lives++;
+    }  
 }

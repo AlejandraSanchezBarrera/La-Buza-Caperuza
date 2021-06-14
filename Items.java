@@ -9,8 +9,13 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Items extends Actor
 {
     protected int points;
+    protected int lives;
     
     public int getPoints(){
         return points;
-    }     
+    }    
+    
+    public int getLives(){
+        return lives;
+    }    
 }

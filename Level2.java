@@ -8,13 +8,10 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Level2 extends Levels
 {
-    private static CaperuzaGame caperuza;
+    private static CaperuzaGame caperuza= new CaperuzaGame();
     private int lives;
     private static int points=0;
-    /**
-     * Constructor for objects of class Level2.
-     * 
-     */
+    
     public Level2()
     {
         super();
@@ -23,7 +20,7 @@ public class Level2 extends Levels
         caperuza=new CaperuzaGame();
         chacters();
         points=0;
-        lives=caperuza.getlives();
+        lives=caperuza.getLives();
         showText(" = " + lives, 1430, 30);
     }
 
@@ -70,8 +67,6 @@ public class Level2 extends Levels
             addObject(new VerticalWall(), 250, y);
             addObject(new VerticalWall(), 450, y);
         }
-        
-
         for(int x=0; x < 1550; x+=72){
             addObject(new Scoreboard(), x, 20);
         }
@@ -99,7 +94,6 @@ public class Level2 extends Levels
             addObject(new Berry(), x, 850);
             
         }
-        
         
         for(int x=200;x<800;x+=50){
             addObject(new Berry(), 50, x);

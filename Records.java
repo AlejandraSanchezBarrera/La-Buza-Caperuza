@@ -14,7 +14,13 @@ public class Records extends Boton
      */
     public void act() 
     {
-        if(Greenfoot.mouseClicked(this))
+        if(Greenfoot.mouseClicked(this)){
+            GreenfootSound  sound = new GreenfootSound("minecraft_click.mp3");
+            sound.setVolume(100);
+            Greenfoot.delay(10);
+            sound.play();
+            Greenfoot.delay(40);
             Greenfoot.setWorld(new Score());
+        }
     }   
 }

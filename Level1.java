@@ -8,7 +8,6 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Level1 extends Levels
 {
-
     /**
      * Constructor for objects of class Level1.
      * 
@@ -26,12 +25,12 @@ public class Level1 extends Levels
         caperuza=new CaperuzaGame();
         chacters();
         points=0;
-        lives=caperuza.getlives();
+        lives=caperuza.getLives();
         showText(" = " + lives, 1430, 30);
     }
 
     public void map(){
-       for(int x=0; x < 1550; x+=72){
+        for(int x=0; x < 1550; x+=72){
             this.addObject(new Wall(), x, 50);
             this.addObject(new Wall(), x, 900);
         }

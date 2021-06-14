@@ -8,12 +8,15 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Winner extends World
 {
-    public int finalPoints=0;
+    public int finalPoints;
+    GreenfootSound  sound = new GreenfootSound("winner.mp3");
     
     public Winner()
-    {    
+    {
         super(1500, 900, 1);
         addObject(new CaperuzaInicio(), 300,620);
+        sound.setVolume(60); 
+        sound.play();
         Greenfoot.delay(10);
         finalPoints=0;
         finalPoints=finalPoints+Level1.getScore();
@@ -24,7 +27,7 @@ public class Winner extends World
     }
     
     public void act(){
-        Greenfoot.delay(600);
+        Greenfoot.delay(400);
         Greenfoot.setWorld(new Menu());
     }
 }

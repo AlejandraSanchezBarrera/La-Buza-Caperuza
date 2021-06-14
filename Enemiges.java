@@ -1,11 +1,13 @@
 import greenfoot.*;  
+
 public class Enemiges extends Characters
 {
+    protected int lives;
     private int offset = 3;
     private int direction=3;
 
     public Enemiges(){
-
+        getOffset();
     }
 
     public void move(){
@@ -32,63 +34,66 @@ public class Enemiges extends Characters
         }
 
         if(isTouching(Obstacle.class)){
-            getdireccion();
+            getDireccion();
         }
     } 
 
-    public void getdireccion(){
+    public void getDireccion(){
         int x = getX();
         int y = getY();
 
         switch(direction){
             case 0:
             setLocation(x, y - offset);
-            changedir();
+            changeDir();
             break;
 
             case 1:
             setLocation(x, y + offset);
-            changedir();
+            changeDir();
             break;
 
             case 2:
             setLocation(x + offset, y);
-            changedir();
+            changeDir();
             break;
 
             case 3:
             setLocation(x - offset, y);
-            changedir();
+            changeDir();
             break;
 
         }
     } 
 
-    public void changedir(){
+    public void changeDir(){
         switch(Greenfoot.getRandomNumber(4)){
             case 0:
             direction=0;
-            moveimage(direction);
+            moveImage(direction);
             break;
 
             case 1:
             direction=1;
-            moveimage(direction);
+            moveImage(direction);
             break;
 
             case 2:
             direction=2;
-            moveimage(direction);
+            moveImage(direction);
             break;
 
             case 3:
             direction=3;
-            moveimage(direction);
+            moveImage(direction);
             break;
 
         }
     } 
 
-    public void moveimage(int direction){}
+    public void moveImage(int direction){}
 
+    public int getOffset(){
+        return 1;
+    }
 }
