@@ -8,10 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Berry extends Items
 {
-    private static final GreenfootImage image = new GreenfootImage("images/baia.png");
-    
     public Berry(){
-        setImage(image);
         points = 1;
     }    
 }

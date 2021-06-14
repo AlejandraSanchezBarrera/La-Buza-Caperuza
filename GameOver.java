@@ -1,4 +1,6 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import java.io.*;
+import javax.swing.JOptionPane;
 
 /**
  * Write a description of class GameOver here.
@@ -9,6 +11,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class GameOver extends World
 {
     public int finalPoints=0;
+    public Save save=new Save();
+    private String name;
     
     public GameOver()
     {    
@@ -22,11 +26,14 @@ public class GameOver extends World
         finalPoints=finalPoints+Level2.getScore();
         finalPoints=finalPoints+Level3.getScore();
         finalPoints=finalPoints-3;
-        showText(""+finalPoints, 1450, 450);
+        showText("PUNTAJE FINAL = "+finalPoints, 1200, 150);
+        addObject(new Regresar(),1400,850);
+        addObject(save,1200,250);
     }
     
     public void act(){
-        Greenfoot.delay(450);
-        Greenfoot.setWorld(new Menu());
+        if(save.getFalgStatus() == 1){
+            save.guardado(finalPoints);
+        }
     }
 }

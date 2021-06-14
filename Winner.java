@@ -1,4 +1,6 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import java.io.*;
+import javax.swing.JOptionPane;
 
 /**
  * Write a description of class Winner here.
@@ -9,6 +11,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Winner extends World
 {
     public int finalPoints;
+    public Save save=new Save();
+    private String name;
     GreenfootSound  sound = new GreenfootSound("winner.mp3");
     
     public Winner()
@@ -23,11 +27,14 @@ public class Winner extends World
         finalPoints=finalPoints+Level2.getScore();
         finalPoints=finalPoints+Level3.getScore();
         finalPoints=finalPoints-3;
-        showText(""+finalPoints, 750, 20);
+        showText("PUNTAJE FINAL = "+finalPoints, 1000, 450);
+        addObject(new Regresar(),1400,850);
+        addObject(save,1000,550);
     }
     
     public void act(){
-        Greenfoot.delay(400);
-        Greenfoot.setWorld(new Menu());
+        if(save.getFalgStatus() == 1){
+            save.guardado(finalPoints);
+       }
     }
 }
