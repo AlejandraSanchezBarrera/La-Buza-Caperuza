@@ -30,7 +30,7 @@ public class CaperuzaGame extends Characters
         enemiges();
         eatItems();
         getLives();
-        gameover();
+        gameOver();
         getUlti();
         skillCounter();
     }  
@@ -101,7 +101,7 @@ public class CaperuzaGame extends Characters
         }
     }
 
-    void eatItems(){
+    public void eatItems(){
         if(isTouching(Items.class)){
             Items item = null;
 
@@ -143,10 +143,6 @@ public class CaperuzaGame extends Characters
     public int getLives(){
         return lives;
     }
-
-    public int getpoints(){
-        return points;
-    }
     
     public static void setPuntuacion(int puntuacion){
         points=puntuacion;
@@ -160,7 +156,7 @@ public class CaperuzaGame extends Characters
         points=0;
     }
     
-    public void gameover(){
+    public void gameOver(){
         if(getLives()==0){
             Greenfoot.setWorld(new GameOver());
         }

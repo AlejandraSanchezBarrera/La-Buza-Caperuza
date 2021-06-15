@@ -37,7 +37,4 @@ public class CaperuzaInicio extends Actor
         }
         counter = (counter + 1)%10;
     }
-    
-    
-    
 }

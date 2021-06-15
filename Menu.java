@@ -10,6 +10,7 @@ public class Menu extends World
 {
     private GreenfootSound sound=null;
     
+    private Save save;
     /**
     * Constructor for objects of class MyWorld.
     * 
@@ -18,6 +19,7 @@ public class Menu extends World
     {    
         super(1500, 900, 1); 
         prepareMenu();
+        save=new Save();
     }
     
     private void prepareMenu(){
