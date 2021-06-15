@@ -12,7 +12,10 @@ public class GameOver extends World
     
     public GameOver()
     {    
-        super(1500, 900, 1); 
+        super(1500, 900, 1);
+        GreenfootSound  sound = new GreenfootSound("gameOver.mp3");
+        sound.setVolume(70); 
+        sound.play();
         Greenfoot.delay(10);
         finalPoints=0;
         finalPoints=finalPoints+Level1.getScore();
@@ -23,7 +26,7 @@ public class GameOver extends World
     }
     
     public void act(){
-        Greenfoot.delay(500);
+        Greenfoot.delay(450);
         Greenfoot.setWorld(new Menu());
     }
 }

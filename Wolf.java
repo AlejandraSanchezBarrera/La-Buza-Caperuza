@@ -9,9 +9,11 @@ import java.util.*;
  */
 public class Wolf extends Enemiges
 {
-
+    private int offset = 3;
+    
     public Wolf(){
-        setImage("LoboL.png");
+        setImage("LoboR.png");
+        int lives=2;
     }
 
     public void act() 
@@ -19,8 +21,7 @@ public class Wolf extends Enemiges
         move();
     }
 
-    @Override
-    public void moveimage(int dir){
+    public void moveImage(int dir){
         switch(dir){
             case 0:
 
@@ -40,5 +41,8 @@ public class Wolf extends Enemiges
 
         }
     }
-
+    
+    public int getOffset(){
+        return offset;
+    }
 }

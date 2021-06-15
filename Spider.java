@@ -8,35 +8,41 @@ import java.util.*;
  */
 public class Spider extends Enemiges
 {
-
+    private int offset = 1;
+    
     public Spider(){
-        setImage("arañaL.png");
+        setImage("araña.png");
+        lives=1;
     }
-
+    
     public void act() 
     {
         move();
     }
-
+    
     @Override
-    public void moveimage(int dir){
+    public void moveImage(int dir){
         switch(dir){
-            case 0:
+            case 0://up
             setImage("araña.png");
             break;
 
-            case 1:
+            case 1://down
             setImage("arañaU.png");
             break;
 
-            case 2:
+            case 2://r
             setImage("arañaL.png");
             break;
 
-            case 3:
+            case 3://l
             setImage("arañaR.png");
             break;
 
         }
+    }
+    @Override
+    public int getOffset(){
+        return offset;
     }
 }

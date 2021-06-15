@@ -9,7 +9,6 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Wall extends Obstacle
 {
     public Wall(){
-        //getImage().scale(40,40);
         setImage("wall.png");
     }
     

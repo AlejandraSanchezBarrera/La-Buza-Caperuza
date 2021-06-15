@@ -23,7 +23,7 @@ public class Level3 extends Levels
         chacters();
         items();
         points=0;
-        lives=caperuza.getlives();
+        lives=caperuza.getLives();
         showText(" = " + lives, 1430, 30);
     }
 

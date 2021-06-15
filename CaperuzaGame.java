@@ -14,6 +14,7 @@ public class CaperuzaGame extends Characters
     private int lives=3;
     private int skill=0;
     private int counter=800;
+    
     public CaperuzaGame()
     {
         setImage("caperuzaR.png");
@@ -28,9 +29,9 @@ public class CaperuzaGame extends Characters
         collisions();
         enemiges();
         eatItems();
-        getlives();
+        getLives();
         gameover();
-        getulti();
+        getUlti();
         skillCounter();
     }  
 
@@ -60,6 +61,7 @@ public class CaperuzaGame extends Characters
         world= getWorld();
         Spider spider = null;
         if(isTouching(Enemiges.class)){
+            Greenfoot.playSound("toques.mp3");
             if((isTouching(Spider.class))&& skill==1){
 
                 spider = (Spider)getOneObjectAtOffset(10, 0, Spider.class);
@@ -124,18 +126,21 @@ public class CaperuzaGame extends Characters
 
             if(item != null)
             {
+                if(isTouching(Apple.class)){
+                    Greenfoot.playSound("orb.mp3");
+                    lives=lives+item.getLives();
+                }
+                Greenfoot.playSound("eat.mp3");
                 points = points + item.getPoints();
                 World world;
                 world= getWorld();
                 world.removeObject(item);
                 getWorld().showText(" = " + points, 70, 20);
             }
-
         }
-
     }
 
-    public int getlives(){
+    public int getLives(){
         return lives;
     }
 
@@ -146,12 +151,6 @@ public class CaperuzaGame extends Characters
     public static void setPuntuacion(int puntuacion){
         points=puntuacion;
     }
-
-    public void gameover(){
-        if(getlives()==0){
-            Greenfoot.setWorld(new GameOver());
-        }
-    }
     
     public static int getPuntuacion(){
         return points;
@@ -160,8 +159,14 @@ public class CaperuzaGame extends Characters
     public void reset(){
         points=0;
     }
-
-    public void getulti(){
+    
+    public void gameover(){
+        if(getLives()==0){
+            Greenfoot.setWorld(new GameOver());
+        }
+    }
+    
+    public void getUlti(){
         if(isTouching(Apple.class)){
             skill=1;
         }

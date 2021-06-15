@@ -8,7 +8,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Menu extends World
 {
-
+    private GreenfootSound sound=null;
+    
     /**
     * Constructor for objects of class MyWorld.
     * 
@@ -27,4 +28,12 @@ public class Menu extends World
         addObject(new Records(),1300,790);
     }
     
+    public void act()
+    {
+        if(sound==null || !sound.isPlaying()){
+            sound= new GreenfootSound("waith.mp3");
+            sound.setVolume(25);
+            sound.playLoop();
+        }
+    }
 }
