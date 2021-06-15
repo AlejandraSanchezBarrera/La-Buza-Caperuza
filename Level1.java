@@ -162,4 +162,13 @@ public class Level1 extends Levels
         addObject(new TeleportLevel1(),1460,830); 
         addObject(new Lives(), 1400,30);
     }
+    
+    public static int getScore(){
+        points+=caperuza.getPuntuacion();
+        return points+1;
+    }
+
+    public static void reset(){
+        points=0;
+    }
 }

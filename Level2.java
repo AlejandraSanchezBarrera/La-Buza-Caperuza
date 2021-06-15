@@ -134,7 +134,6 @@ public class Level2 extends Levels
         addObject(new Apple(),450,700);
     }
 
-
     public void chacters(){
         addObject(caperuza, 50,113);
         addObject(new Lives(), 1400,30);
@@ -145,5 +144,15 @@ public class Level2 extends Levels
         addObject(new Spider(), 1150,800);
         addObject(new Spider(), 1130,100);
         addObject(new Spider(), 750,200);
+    }
+    
+    public static int getScore(){
+        points+=caperuza.getPuntuacion();
+        return points+1;
+    }
+
+    public static void reset(){
+        caperuza.reset();
+        points=0;
     }
 }

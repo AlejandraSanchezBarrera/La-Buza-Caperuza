@@ -137,4 +137,14 @@ public class Level3 extends Levels
         addObject(new Spider(), 1400,650);
         addObject(new Spider(), 830,800);
     }
+    
+    public static int getScore(){
+        points+=caperuza.getPuntuacion();
+        return points+1;
+    }
+    
+    public static void reset(){
+        caperuza.reset();
+        points=0;
+    }
 }
