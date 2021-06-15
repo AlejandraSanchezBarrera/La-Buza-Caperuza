@@ -16,5 +16,5 @@ public class ComoJugar extends Boton
     {
         if(Greenfoot.mouseClicked(this))
             Greenfoot.setWorld(new Help());
-    }    
+    }     
 }

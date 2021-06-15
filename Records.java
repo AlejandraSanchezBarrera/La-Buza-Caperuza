@@ -16,5 +16,5 @@ public class Records extends Boton
     {
         if(Greenfoot.mouseClicked(this))
             Greenfoot.setWorld(new Score());
-    }    
+    }   
 }

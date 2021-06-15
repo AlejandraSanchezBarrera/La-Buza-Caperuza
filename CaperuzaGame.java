@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class CaperuzaGame extends Characters
 {
-    private static final int OFFSET = 3;
+    private static final int OFFSET = 4;
     private int points=0;
     private int direction=0;
     private int lives=3;
